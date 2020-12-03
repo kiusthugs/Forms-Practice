@@ -1,0 +1,150 @@
+/* * {
+  border: solid red 1px;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f9f4f0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: green;
+  text-align: center;
+  padding: 18px 0;
+}
+
+header img {
+  width: 44px;
+  height: 33.2px;
+}
+
+header span {
+  font-size: 1.8em;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* 
+-used flex on directly on the lists first parent container
+-flex made everything go in a row
+-apparently the lists weren't display at 100% so set width to 100%
+- space the content around
+- the 'a' element made us adjust the text to the center of its flex box but you must set it as a block element as text align center doesn't work with inline elements
+- make a border for the ul container
+- make left borders on the lists
+- grab the first child list so that the left border doesn't overlap and make a thicker border with the ul container border style
+*/
+
+ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  border: solid green 1px;
+}
+
+li:first-child {
+  border-left: none;
+}
+
+nav li {
+  list-style: none;
+  width: 100%;
+  border-left: solid green 1px;
+}
+
+/* 
+- to set a bigger target size and have the visited links cover the whole nav button, set styles for the 'a' element
+- padding, display: block; will make the a link target size bigger */
+
+nav a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: green;
+  font-family: sans-serif;
+  background-color: #BFBFBF;
+  padding: 1rem;
+}
+
+ul li a:link, ul li a:visited {
+  background-color: green;
+  color: white;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: green;
+
+}
+
+i {
+  margin-right: 10px;
+}
+
+form input, form label {
+  color: green;
+}
+
+form h2 {
+  color: green;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.required {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: green;
+}
+
+label {
+  font-size: 1.3em;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+#zip, #phone {
+  margin-bottom: 5px;
+}
+
+.form-body p {
+  margin-top: 0;
+  font-size: .9em;
+}
+
+.center {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.2em;
+
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    max-width: 800px; 
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Tacos By Roscoe | Delivery Information</title>
+  <link rel='stylesheet' href='style.css'>
+  <script src="https://kit.fontawesome.com/01afafe0a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src='img/taco-emoji.png' alt='tacos with meat, lettuce and tomato'>
+    <span>Tacos By Roscoe</span>
+  </header>
+  <div class='container'>
+    <nav class='clearfix'>
+      <ul>
+        <li><a href='#'>Delivery</a></li>
+        <li><a>Billing</a></li>
+        <li><a>Review</a></li> <!-- make a css active style and make clicked links dark green-->
+      </ul>
+    </nav>
+    <div class='summary'>
+      <i class="fas fa-utensils fa-3x"></i>
+      <div class='text'>
+      <p>Delivery by 7pm, April 13, 2020</p>
+      <p>6 items, $31.44</p>
+      </div>
+    </div>
+    <form action='index.html'>
+      <h2>Delivery Information</h2>
+      <p class='required'>* - required field</p>
+      <div class='form-body'>
+      <label for='name'>Your Name *</label><br>
+      <input type='text' id='name' name='user_name'><br>
+      <label for='email'>Email Address *</label><br>
+      <input type='text' id='email' name='user_email'><br>
+      <label for='street'>Street Address *</label><br>
+      <input type='text' id='street' name='user_street_address'><br>
+      <label for='apt'>Apartment/Office Number</label><br>
+      <input type='text' id='apt' name='user_apartment_office'><br>
+      <label for='zip'>Zip Code *</label><br>
+      <input type='text' id='zip' name='user_zip'><br>
+      <p>City and state will be looked up from Zip Code.</p>
+      <label for='phone'>Phone</label><br>
+      <input type='text' id='phone' name='user_phone'><br>
+      <p>No phone? Include alternate contact below.</p>
+      <label for='instructions'>Delivery Instructions</label><br>
+      <textarea id='instructions' name='user_instructions'></textarea><br>
+    </div>
+    <div class='center'>
+      <input type='submit' value='Continue to Billing'>
+    </div>
+    </form>
+  </div>
+</body>
+
+</html>
